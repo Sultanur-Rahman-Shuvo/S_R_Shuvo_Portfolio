@@ -80,7 +80,7 @@ export default function Experience() {
                 }`}
               >
                 {/* Timeline dot */}
-                <div className="absolute left-8 md:left-1/2 transform md:-translate-x-1/2 w-4 h-4 bg-gradient-to-r from-[#0097e6] to-[#7ed6df] rounded-full border-4 border-white dark:border-gray-900 z-10"></div>
+                <div className="absolute left-8 md:left-1/2 transform md:-translate-x-1/2 w-4 h-4 bg-gradient-to-r from-[#0097e6] to-[#7ed6df] rounded-full border-4 border-gray-200 dark:border-gray-900 z-10"></div>
 
                 {/* Content card */}
                 <div className={`bg-white dark:bg-gray-800 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 dark:border-gray-700 overflow-hidden flex-1 ml-12 md:ml-0 ${

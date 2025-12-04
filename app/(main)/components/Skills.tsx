@@ -136,7 +136,6 @@ export default function Skills() {
                   </div>
                 </div>
               </div>
-
               <div className="p-6">
                 <div className="grid md:grid-cols-2 gap-6">
                   {group.skills.map((skill, skillIndex) => (

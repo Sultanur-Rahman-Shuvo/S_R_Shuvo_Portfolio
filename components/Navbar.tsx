@@ -18,7 +18,7 @@ export default function Navbar() {
       initial={{ opacity: 0, y: -20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
-      className="sticky top-0 bg-white/90 dark:bg-gray-900/90 backdrop-blur-lg z-50 py-4 border-b border-gray-200/50 dark:border-gray-700/50"
+      className="fixed top-0 bg-white/90 dark:bg-gray-900/90 backdrop-blur-lg z-50 py-4 border-b border-gray-200/50 dark:border-gray-700/50 w-full"
     >
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
         <motion.div
