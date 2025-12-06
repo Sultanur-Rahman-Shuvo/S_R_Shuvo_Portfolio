@@ -2,17 +2,12 @@
 
 import { motion } from "framer-motion";
 import SkillBar from "@/components/SkillBar";
-import {
-  FiCode,
-  FiBarChart2,
-  FiTarget,
-  FiTool,
-} from "react-icons/fi";
+import { SiCoder, SiPython, SiMeta, SiGit } from "react-icons/si";
 
 const groupedSkills = [
   {
     category: "Web Development",
-    icon: <FiCode className="w-6 h-6" />,
+    icon: <SiCoder className="w-6 h-6" />,
     gradient: "from-[#0097e6] to-[#7ed6df]",
     bgGradient:
       "from-[#0097e6] to-[#7ed6df] dark:from-[#0097e6]/20 dark:to-[#7ed6df]/20",
@@ -31,7 +26,7 @@ const groupedSkills = [
   },
   {
     category: "Data Science",
-    icon: <FiBarChart2 className="w-6 h-6" />,
+    icon: <SiPython className="w-6 h-6" />,
     gradient: "from-[#0097e6] to-[#7ed6df]",
     bgGradient:
       "from-[#0097e6] to-[#7ed6df] dark:from-[#0097e6]/20 dark:to-[#7ed6df]/20",
@@ -40,8 +35,8 @@ const groupedSkills = [
       { name: "Numpy", level: 80 },
       { name: "Pandas", level: 80 },
       { name: "Matplotlib", level: 85 },
-      { name: "SQL", level: 85 },
-      { name: "Probability", level: 90 },
+      { name: "MySQL", level: 85 },
+      { name: "Probability", level: 80 },
       { name: "Machine Learning", level: 85 },
       { name: "Scikit-learn", level: 85 },
       { name: "Deep Learning & Neural Networks", level: 80 },
@@ -54,7 +49,7 @@ const groupedSkills = [
   },
   {
     category: "Digital Marketing",
-    icon: <FiTarget className="w-6 h-6" />,
+    icon: <SiMeta className="w-6 h-6" />,
     gradient: "from-[#0097e6] to-[#7ed6df]",
     bgGradient:
       "from-[#0097e6] to-[#7ed6df] dark:from-[#0097e6]/20 dark:to-[#7ed6df]/20",
@@ -69,7 +64,7 @@ const groupedSkills = [
   },
   {
     category: "Tools & Soft Skills",
-    icon: <FiTool className="w-6 h-6" />,
+    icon: <SiGit className="w-6 h-6" />,
     gradient: "from-[#0097e6] to-[#7ed6df]",
     bgGradient:
       "from-[#0097e6] to-[#7ed6df] dark:from-[#0097e6]/20 dark:to-[#7ed6df]/20",
@@ -78,6 +73,8 @@ const groupedSkills = [
       { name: "Communication & Teamwork", level: 95 },
       { name: "English", level: 85 },
       { name: "Time Management", level: 95 },
+      { name: "Project Management", level: 90 },
+      { name: "Problem Solving", level: 85 },
     ],
   },
 ];
@@ -177,21 +174,27 @@ export default function Skills() {
               comprehensive digital solutions.
             </p>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm">
-              <div className="text-center">
-                <div className="text-2xl font-bold">4+</div>
-                <div className="text-blue-200">Domains</div>
+              <div className="text-center backdrop-blur-sm bg-white/10 rounded-xl p-4 border border-white/20 hover:bg-white/20 transition-all duration-300 hover:scale-105">
+                <div className="text-3xl font-bold drop-shadow-lg mb-1">3</div>
+                <div className="text-white/80 font-medium">Domains</div>
               </div>
-              <div className="text-center">
-                <div className="text-2xl font-bold">30+</div>
-                <div className="text-blue-200">Technologies</div>
+              <div className="text-center backdrop-blur-sm bg-white/10 rounded-xl p-4 border border-white/20 hover:bg-white/20 transition-all duration-300 hover:scale-105">
+                <div className="text-3xl font-bold drop-shadow-lg mb-1">
+                  30+
+                </div>
+                <div className="text-white/80 font-medium">Technologies</div>
               </div>
-              <div className="text-center">
-                <div className="text-2xl font-bold">85%</div>
-                <div className="text-blue-200">Average Skill</div>
+              <div className="text-center backdrop-blur-sm bg-white/10 rounded-xl p-4 border border-white/20 hover:bg-white/20 transition-all duration-300 hover:scale-105">
+                <div className="text-3xl font-bold drop-shadow-lg mb-1">
+                  90%
+                </div>
+                <div className="text-white/80 font-medium">Average Skill</div>
               </div>
-              <div className="text-center">
-                <div className="text-2xl font-bold">100%</div>
-                <div className="text-blue-200">Dedication</div>
+              <div className="text-center backdrop-blur-sm bg-white/10 rounded-xl p-4 border border-white/20 hover:bg-white/20 transition-all duration-300 hover:scale-105">
+                <div className="text-3xl font-bold drop-shadow-lg mb-1">
+                  100%
+                </div>
+                <div className="text-white/80 font-medium">Dedication</div>
               </div>
             </div>
           </div>
