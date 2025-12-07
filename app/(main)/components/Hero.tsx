@@ -100,18 +100,18 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="min-h-screen flex items-center justify-center relative overflow-hidden pt-24 lg:pt-20 pb-16 lg:py-0"
+      className="min-h-screen flex items-center justify-center relative overflow-hidden pt-24 lg:pt-20 pb-16 lg:py-0 z-10"
     >
-      <div className="max-w-7xl mx-auto w-full px-4 lg:px-8">
+      <div className="max-w-7xl mx-auto w-full px-4 lg:px-8 relative z-20">
         <motion.div
           ref={heroRef}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8 }}
-          className="grid lg:grid-cols-2 gap-16 lg:gap-20 items-center"
+          className="grid lg:grid-cols-2 gap-16 lg:gap-20 items-center relative z-30"
         >
           {/* Left Content */}
-          <div className="flex flex-col justify-center pt-8 lg:pt-0">
+          <div className="flex flex-col justify-center pt-8 lg:pt-0 relative z-40">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -172,8 +172,8 @@ export default function Hero() {
               transition={{ delay: 0.8 }}
             >
               Creative technologist specializing in full-stack development, data
-              science & analytics, and digital marketing. I build scalable solutions that
-              drive innovation and growth.
+              science & analytics, and digital marketing. I build scalable
+              solutions that drive innovation and growth.
             </motion.p>
 
             <div
@@ -244,7 +244,7 @@ export default function Hero() {
 
           {/* Right Content - Image */}
           <motion.div
-            className="hero-image relative w-80 h-80 lg:w-96 lg:h-96 mx-auto lg:mx-0 floating mt-12 lg:mt-0"
+            className="hero-image relative w-80 h-80 lg:w-96 lg:h-96 mx-auto lg:mx-0 floating mt-12 lg:mt-0 z-30"
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.6, delay: 0.6 }}
@@ -276,7 +276,7 @@ export default function Hero() {
                   {/* Image with rounded corners */}
                   <div className="w-full h-full rounded-2xl overflow-hidden relative bg-gradient-to-br from-gray-200 to-gray-300 dark:from-gray-800 dark:to-gray-900">
                     <Image
-                      src="/images/profile.jpg"
+                      src="/images/profile.webp"
                       alt="Sultanur Rahman Shuvo"
                       fill
                       className="object-cover"
