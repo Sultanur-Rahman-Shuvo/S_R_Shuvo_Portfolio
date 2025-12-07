@@ -29,14 +29,10 @@ const projects: Project[] = [
     title: "Expense Tracker App with MERN Stack",
     description:
       "I built this site using React and CSS for a sleek and responsive UI, with Node.js and MongoDB powering the backend. It features user authentication, real-time expense tracking, and insightful data visualizations to help users manage their finances effectively.",
-    techStack: [
-      "React.js",
-      "CSS",
-      "Node.js",
-      "MongoDB"
-    ],
+    techStack: ["React.js", "CSS", "Node.js", "MongoDB"],
     link: "#",
-    source: "https://github.com/Sultanur-Rahman-Shuvo/MERN-Stack-and-NEXT-Js-and-PHP-Projects/tree/main/expense_tracker_app",
+    source:
+      "https://github.com/Sultanur-Rahman-Shuvo/MERN-Stack-and-NEXT-Js-and-PHP-Projects/tree/main/expense_tracker_app",
     image: "/projects/expense_tracker.png",
     category: "Web Development",
   },
@@ -46,7 +42,8 @@ const projects: Project[] = [
       "Build a modern blog app using Next.js, TypeScript, and TailwindCSS. This project features a dynamic post system, responsive UI, and a structured layout for an optimized user experience.",
     techStack: ["Next.js", "Tailwind CSS", "TypeScript"],
     link: "#",
-    source: "https://github.com/Sultanur-Rahman-Shuvo/MERN-Stack-and-NEXT-Js-and-PHP-Projects/tree/main/blogapp_nextjs",
+    source:
+      "https://github.com/Sultanur-Rahman-Shuvo/MERN-Stack-and-NEXT-Js-and-PHP-Projects/tree/main/blogapp_nextjs",
     image: "/projects/blogapp.png",
     category: "Web Development",
   },
@@ -56,7 +53,8 @@ const projects: Project[] = [
       "Built with React, Bootstrap, and CSS, this website offers a sleek, responsive design with smooth UI components for an enhanced user experience.",
     techStack: ["React", "CSS", "React Bootstrap"],
     link: "#",
-    source: "https://github.com/Sultanur-Rahman-Shuvo/MERN-Stack-and-NEXT-Js-and-PHP-Projects/tree/main/corporate",
+    source:
+      "https://github.com/Sultanur-Rahman-Shuvo/MERN-Stack-and-NEXT-Js-and-PHP-Projects/tree/main/corporate",
     image: "/projects/corporate.png",
     category: "Web Development",
   },
@@ -66,7 +64,8 @@ const projects: Project[] = [
       "A feature-rich e-commerce platform built with React, Node.js, MongoDB, and Redux for efficient state management. It includes product listings, cart management, user authentication, and secure checkout for a seamless shopping experience.",
     techStack: ["React", "Node.js", "MongoDB", "Redux"],
     link: "#",
-    source: "https://github.com/Sultanur-Rahman-Shuvo/MERN-Stack-and-NEXT-Js-and-PHP-Projects/tree/main/react_ecommerceapp",
+    source:
+      "https://github.com/Sultanur-Rahman-Shuvo/MERN-Stack-and-NEXT-Js-and-PHP-Projects/tree/main/react_ecommerceapp",
     image: "/projects/react_ecommerce.png",
     category: "Web Development",
   },
@@ -76,7 +75,8 @@ const projects: Project[] = [
       "A simple and efficient notebook app built with React for the frontend, Node.js and MongoDB for the backend, and Bootstrap for a responsive UI. It allows users to create, edit, and manage notes seamlessly.",
     techStack: ["React", "Node.js", "MongoDB", "Bootstrap"],
     link: "#",
-    source: "https://github.com/Sultanur-Rahman-Shuvo/MERN-Stack-and-NEXT-Js-and-PHP-Projects/tree/main/notebookapp",
+    source:
+      "https://github.com/Sultanur-Rahman-Shuvo/MERN-Stack-and-NEXT-Js-and-PHP-Projects/tree/main/notebookapp",
     image: "/projects/notebookapp.png",
     category: "Web Development",
   },
@@ -86,7 +86,8 @@ const projects: Project[] = [
       "A powerful Point of Sale (POS) application built with React, Node.js, and MongoDB. It features product management, sales tracking, and a seamless checkout system for efficient business operations.",
     techStack: ["React", "Node.js", "MongoDB"],
     link: "#",
-    source: "https://github.com/Sultanur-Rahman-Shuvo/MERN-Stack-and-NEXT-Js-and-PHP-Projects/tree/main/posapp",
+    source:
+      "https://github.com/Sultanur-Rahman-Shuvo/MERN-Stack-and-NEXT-Js-and-PHP-Projects/tree/main/posapp",
     image: "/projects/posapp.png",
     category: "Web Development",
   },
@@ -96,7 +97,8 @@ const projects: Project[] = [
       "NewsApp is a sleek and responsive React-based news platform built with Bootstrap, offering users quick access to the latest headlines from around the world. Stay informed with real-time updates, easy navigation, and a user-friendly interface.",
     techStack: ["React", "Bootstrap"],
     link: "#",
-    source: "https://github.com/Sultanur-Rahman-Shuvo/MERN-Stack-and-NEXT-Js-and-PHP-Projects/tree/main/newsapp",
+    source:
+      "https://github.com/Sultanur-Rahman-Shuvo/MERN-Stack-and-NEXT-Js-and-PHP-Projects/tree/main/newsapp",
     image: "/projects/newsapp.png",
     category: "Web Development",
   },
@@ -106,7 +108,8 @@ const projects: Project[] = [
       "WorldInfo is a React-based website providing detailed country information, including currency, population, and more. Designed with a sleek interface using CSS for a smooth user experience.",
     techStack: ["React", "CSS"],
     link: "#",
-    source: "https://github.com/Sultanur-Rahman-Shuvo/MERN-Stack-and-NEXT-Js-and-PHP-Projects/tree/main/countries_react",
+    source:
+      "https://github.com/Sultanur-Rahman-Shuvo/MERN-Stack-and-NEXT-Js-and-PHP-Projects/tree/main/countries_react",
     image: "/projects/worldinfo.png",
     category: "Web Development",
   },
@@ -165,7 +168,7 @@ const projects: Project[] = [
     title: "Python Data Analysis Project",
     description:
       "I used Python to analyze multiple projects and create a detailed report with insights and recommendations. The analysis included data cleaning, data manipulation, and data visualization to provide a comprehensive overview of the projects.",
-    techStack: ["Python","Data Cleaning", "Data Visualization"],
+    techStack: ["Python", "Data Cleaning", "Data Visualization"],
     link: "#",
     source: "https://github.com/Sultanur-Rahman-Shuvo/pythonprojects",
     image: "/projects/python_projects.png",
@@ -175,9 +178,10 @@ const projects: Project[] = [
     title: "RAG-Based AI Teaching Assistant",
     description:
       "Built a preprocessing pipeline that chunked transcripts and generated bge-m3 embeddings via Ollama, saving structured vectors to joblib for downstream RAG retrieval.",
-    techStack: ["Python","Ollama", "BGE-M3"],
+    techStack: ["Python", "Ollama", "BGE-M3"],
     link: "#",
-    source: "https://github.com/Sultanur-Rahman-Shuvo/data_science/tree/main/RAG%20Based%20AI%20Teaching%20Assistant",
+    source:
+      "https://github.com/Sultanur-Rahman-Shuvo/data_science/tree/main/RAG%20Based%20AI%20Teaching%20Assistant",
     image: "/projects/rag_based_ai_assistant.png",
     category: "Data Science & Analytics",
   },
@@ -189,13 +193,13 @@ const projects: Project[] = [
     techStack: [
       "Google Tag Manager",
       "Google Analytics",
-      "Facebook Event Manager"
+      "Facebook Event Manager",
     ],
     link: "#",
     source: "https://github.com/Sultanur-Rahman-Shuvo/DigitalMarketing",
     image: "/projects/tag_manager.png",
     category: "Digital Marketing",
-  }
+  },
 ];
 
 const categoryConfig = {
@@ -426,6 +430,7 @@ export default function Projects() {
                               width={400}
                               height={240}
                               className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-700"
+                              unoptimized
                             />
                             <div className="absolute top-4 right-4 z-20">
                               <span
@@ -571,6 +576,7 @@ export default function Projects() {
                     width={800}
                     height={400}
                     className="w-full h-64 object-cover"
+                    unoptimized
                   />
                   <button
                     onClick={() => setSelectedProject(null)}
