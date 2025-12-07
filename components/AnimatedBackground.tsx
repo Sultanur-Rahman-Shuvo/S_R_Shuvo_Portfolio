@@ -6,13 +6,21 @@ import { gsap } from "gsap";
 export default function AnimatedBackground() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const [mounted, setMounted] = useState(false);
+  const [enabled, setEnabled] = useState(true);
 
   useEffect(() => {
     setMounted(true);
+    const isMobile = window.innerWidth < 768;
+    const prefersReduceMotion = window.matchMedia(
+      "(prefers-reduced-motion: reduce)"
+    ).matches;
+    if (isMobile || prefersReduceMotion) {
+      setEnabled(false);
+    }
   }, []);
 
   useEffect(() => {
-    if (!mounted || !canvasRef.current) return;
+    if (!mounted || !enabled || !canvasRef.current) return;
 
     const canvas = canvasRef.current;
     const ctx = canvas.getContext("2d");
@@ -69,8 +77,8 @@ export default function AnimatedBackground() {
     // Create particles
     const particles: Particle[] = [];
     const particleCount = Math.min(
-      100,
-      Math.floor((canvas.width * canvas.height) / 15000)
+      60,
+      Math.floor((canvas.width * canvas.height) / 20000)
     );
 
     for (let i = 0; i < particleCount; i++) {
@@ -151,13 +159,13 @@ export default function AnimatedBackground() {
     return () => {
       window.removeEventListener("resize", resizeCanvas);
     };
-  }, [mounted]);
+  }, [mounted, enabled]);
 
-  return (
+  return enabled ? (
     <canvas
       ref={canvasRef}
       className="fixed inset-0 w-full h-full pointer-events-none z-0"
       style={{ background: "transparent" }}
     />
-  );
+  ) : null;
 }
