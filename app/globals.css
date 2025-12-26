@@ -1,0 +1,251 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Base styles */
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+  font-feature-settings: "kern" 1;
+}
+
+/* Custom scrollbar - Premium Design */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-gray-50 dark:bg-gray-900;
+  border-left: 1px solid rgba(0, 151, 230, 0.1);
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-gradient-to-b from-[#0097e6] to-[#7ed6df] rounded-full;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+  border: 2px solid transparent;
+  background-clip: padding-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-gradient-to-b from-[#007bbd] to-[#64c3cf];
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Focus states - Exclude copy buttons */
+button:not(.copy-button):focus,
+a:focus {
+  @apply outline-none ring-2 ring-blue-500 ring-opacity-50;
+}
+
+/* Smooth transitions */
+* {
+  transition: background-color 0.3s ease, border-color 0.3s ease,
+    color 0.3s ease;
+}
+
+/* Line clamp utility for better text truncation */
+.line-clamp-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Custom animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.animate-gradient {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+
+/* Glass morphism effect - Enhanced */
+.glass {
+  @apply backdrop-blur-xl bg-white/60 dark:bg-gray-900/60 border border-white/30 dark:border-gray-700/30;
+  box-shadow: 0 8px 32px 0 rgba(0, 151, 230, 0.1);
+}
+
+.glass-premium {
+  @apply backdrop-blur-2xl bg-white/80 dark:bg-gray-900/80 border-2 border-white/40 dark:border-gray-700/40;
+  box-shadow: 0 8px 32px 0 rgba(0, 151, 230, 0.15),
+    inset 0 1px 0 0 rgba(255, 255, 255, 0.2),
+    inset 0 -1px 0 0 rgba(0, 0, 0, 0.05);
+}
+
+/* Hover effects */
+.hover-lift {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+/* Custom shadow for cards - Professional System */
+.shadow-card {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04), 0 1px 3px rgba(0, 0, 0, 0.06),
+    0 0 0 1px rgba(0, 0, 0, 0.02);
+}
+
+.shadow-card-hover {
+  box-shadow: 0 20px 40px -12px rgba(0, 151, 230, 0.25),
+    0 10px 20px -8px rgba(0, 0, 0, 0.1), 0 0 0 1px rgba(0, 151, 230, 0.05);
+}
+
+.shadow-premium {
+  box-shadow: 0 25px 50px -12px rgba(0, 151, 230, 0.3),
+    0 12px 24px -8px rgba(0, 0, 0, 0.12), 0 0 0 1px rgba(0, 151, 230, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+
+/* Tilt container improvements */
+.react-parallax-tilt {
+  @apply transform-gpu;
+  transform-style: preserve-3d;
+}
+
+/* Gradient text utility */
+.text-gradient {
+  @apply bg-clip-text text-transparent bg-gradient-to-r;
+}
+
+/* Spin animations for premium effects */
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin-reverse {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+/* Button styles - Premium Design */
+.btn-primary {
+  @apply bg-gradient-to-r from-[#0097e6] to-[#7ed6df] hover:from-[#007bbd] hover:to-[#64c3cf] text-white font-semibold py-3 px-6 rounded-xl transition-all duration-300 transform hover:scale-105;
+  box-shadow: 0 4px 14px 0 rgba(0, 151, 230, 0.4),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+.btn-primary:hover {
+  box-shadow: 0 6px 20px 0 rgba(0, 151, 230, 0.5),
+    inset 0 1px 0 rgba(255, 255, 255, 0.3);
+}
+
+.btn-secondary {
+  @apply border-2 border-[#0097e6] text-[#0097e6] hover:bg-[#0097e6] hover:text-white font-semibold py-3 px-6 rounded-xl transition-all duration-300 transform hover:scale-105;
+  box-shadow: 0 2px 8px rgba(0, 151, 230, 0.15);
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-secondary:hover {
+  box-shadow: 0 4px 14px rgba(0, 151, 230, 0.3);
+}
+
+.btn-secondary::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.2),
+    transparent
+  );
+  transition: left 0.5s;
+}
+
+.btn-secondary:hover::before {
+  left: 100%;
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  .react-parallax-tilt {
+    transform: none !important;
+  }
+}
+
+/* Print styles */
+@media print {
+  .project-card {
+    break-inside: avoid;
+  }
+
+  .react-parallax-tilt {
+    transform: none !important;
+  }
+}
+
+/* Selection styles */
+::selection {
+  @apply bg-blue-500/30 text-blue-900 dark:text-blue-100;
+}
+
+::-moz-selection {
+  @apply bg-blue-500/30 text-blue-900 dark:text-blue-100;
+}
