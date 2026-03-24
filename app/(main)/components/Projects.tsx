@@ -123,7 +123,7 @@ const projects: Project[] = [
     image: "/projects/library_explorer.png",
     category: "Web Development",
   },
-  // Data Science & Analytics Projects
+  // Data Science & AI Projects
   {
     title: "Data Analysis with Excel",
     description:
@@ -132,7 +132,7 @@ const projects: Project[] = [
     link: "#",
     source: "https://github.com/Sultanur-Rahman-Shuvo/excelprojects",
     image: "/projects/excel_projects.png",
-    category: "Data Science & Analytics",
+    category: "Data Science & AI",
   },
   {
     title: "Data Analysis with MySQL",
@@ -142,7 +142,7 @@ const projects: Project[] = [
     link: "#",
     source: "https://github.com/Sultanur-Rahman-Shuvo/mysql-projects",
     image: "/projects/mysql_projects.png",
-    category: "Data Science & Analytics",
+    category: "Data Science & AI",
   },
   {
     title: "Tableau Project Dashboard",
@@ -152,7 +152,7 @@ const projects: Project[] = [
     link: "https://public.tableau.com/app/profile/sultan.shuvo/vizzes",
     source: "https://public.tableau.com/app/profile/sultan.shuvo/vizzes",
     image: "/projects/tableau_projects.png",
-    category: "Data Science & Analytics",
+    category: "Data Science & AI",
   },
   {
     title: "Power BI Project Dashboard",
@@ -162,7 +162,7 @@ const projects: Project[] = [
     link: "#",
     source: "https://github.com/Sultanur-Rahman-Shuvo/powerbiprojects",
     image: "/projects/powerbi_projects.png",
-    category: "Data Science & Analytics",
+    category: "Data Science & AI",
   },
   {
     title: "Python Data Analysis Project",
@@ -172,7 +172,7 @@ const projects: Project[] = [
     link: "#",
     source: "https://github.com/Sultanur-Rahman-Shuvo/pythonprojects",
     image: "/projects/python_projects.png",
-    category: "Data Science & Analytics",
+    category: "Data Science & AI",
   },
   {
     title: "RAG-Based AI Teaching Assistant",
@@ -183,7 +183,29 @@ const projects: Project[] = [
     source:
       "https://github.com/Sultanur-Rahman-Shuvo/data_science/tree/main/RAG%20Based%20AI%20Teaching%20Assistant",
     image: "/projects/rag_based_ai_assistant.png",
-    category: "Data Science & Analytics",
+    category: "Data Science & AI",
+  },
+  {
+    title: "Plant Disease Prediction using CNN",
+    description:
+      "Built and trained a CNN-based image classifier model that preprocesses plant leaf images and predicts diseases, enabling accurate and early detection for improved crop management.",
+    techStack: ["Python", "Keras", "Streamlit"],
+    link: "#",
+    source:
+      "https://github.com/Sultanur-Rahman-Shuvo/Plant_disease_prediction_cnn_deep_leanring_project/tree/main",
+    image: "/projects/plant_disease_prediction_cnn.jpeg",
+    category: "Data Science & AI",
+  },
+  {
+    title: "Movie Recommendation or Prediction Sytem using ML",
+    description:
+      "Built a machine learning-based recommendation system that analyzes user preferences and movie features to predict and suggest personalized movies.",
+    techStack: ["Python", "Scikit-learn", "Numpy & Pandas"],
+    link: "#",
+    source:
+      "https://github.com/Sultanur-Rahman-Shuvo/movie_recommendation_or_prediction_sytem_using_ML/tree/main",
+    image: "/projects/movie_recommendation_or_prediction_sytem.png",
+    category: "Data Science & AI",
   },
   // Digital Marketing Projects
   {
@@ -209,7 +231,7 @@ const categoryConfig = {
     bgGradient:
       "from-[#0097e6] to-[#7ed6df] dark:from-[#0097e6]/20 dark:to-[#7ed6df]/20",
   },
-  "Data Science & Analytics": {
+  "Data Science & AI": {
     icon: <SiPython className="w-6 h-6" />,
     gradient: "from-[#0097e6] to-[#7ed6df]",
     bgGradient:
@@ -377,7 +399,7 @@ export default function Projects() {
                         <p className="text-gray-600 dark:text-gray-300 mt-2">
                           {category === "Web Development" &&
                             "Full-stack applications and responsive web solutions"}
-                          {category === "Data Science & Analytics" &&
+                          {category === "Data Science & AI" &&
                             "Machine learning models and data analysis projects"}
                           {category === "Digital Marketing" &&
                             "Strategic campaigns and growth initiatives"}

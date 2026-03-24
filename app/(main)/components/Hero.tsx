@@ -181,7 +181,7 @@ export default function Hero() {
               suppressHydrationWarning
             >
               <motion.a
-                href="/downloads/shuvo_CV.pdf"
+                href="/downloads/CV_Shuvo.pdf"
                 download
                 className="group inline-flex items-center justify-center gap-2.5 px-8 py-3.5 bg-gradient-to-r from-[#0097e6] to-[#7ed6df] text-white font-semibold rounded-xl transition-all duration-300 shadow-lg hover:shadow-2xl shadow-[#0097e6]/40 hover:shadow-[#0097e6]/60 relative overflow-hidden floating text-base lg:text-lg"
                 whileHover={{ scale: 1.05, y: -2 }}

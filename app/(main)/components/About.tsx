@@ -54,7 +54,7 @@ export default function About() {
                   Sultanur Rahman Shuvo
                 </strong>
                 , a dedicated and skilled <strong>Full-Stack Web Developer</strong>{" "}
-                with solid expertise in <strong>data science & analytics, and digital marketing</strong>. I build responsive applications, create data-driven dashboards, and develop machine-learning features that transform complex data into practical, usable insights. Currently
+                with solid expertise in <strong>Data Science & AI, and Digital Marketing</strong>. I build responsive applications, create data-driven dashboards, and develop machine-learning features that transform complex data into practical, usable insights. Currently
                 pursuing my{" "}
                 <strong>
                   Bachelor of Science in Computer Science and Engineering
@@ -79,7 +79,7 @@ export default function About() {
                 <strong>React, Node.js, MongoDB, and Express</strong> for
                 full-stack development, along with{" "}
                 <strong>Next.js and TypeScript</strong> for SEO-optimized
-                applications. I also work with data science and analytics tools to build dashboards, automate insights, and integrate machine-learning features into applications. As the founder of <strong>StyleSilo</strong>, I
+                applications. I also work with Data Science and AI tools to build dashboards, automate insights, and integrate machine-learning features into applications. As the founder of <strong>StyleSilo</strong>, I
                 designed and managed a{" "}
                 <strong>WooCommerce-based e-commerce platform</strong>,
                 integrating frontend design with backend functionality to
@@ -246,9 +246,9 @@ export default function About() {
                   "MERN Stack",
                   "Next.js",
                   "TypeScript",
-                  "PHP",
+                  "Laravel ( Livewire )",
                   "WordPress & WooCommerce",
-                  "Data Science & Analytics",
+                  "Data Science & AI",
                   "Digital Marketing"
                 ].map((tech, index) => (
                   <motion.span
